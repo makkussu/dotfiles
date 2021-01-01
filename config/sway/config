@@ -35,7 +35,7 @@ set $down j
 set $up k
 set $right l
 # Your preferred terminal emulator
-set $term termite
+set $term alacritty 
 set $lock ~/.config/sway/lock.sh
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
@@ -133,8 +133,9 @@ bindsym Shift+print exec grim - | swappy -f -
 	# Launch Ranger
 	bindsym $mod+d exec termite -e nnn
 
-    # Launch Chromium
-    bindsym $mod+F2 exec chromium --enable-features=WebUIDarkMode --force-dark-mode 
+    # Launch LibreWolf 
+    bindsym $mod+F2 exec librewolf 
+    bindsym $mod+F3 exec chromium --enable-features=WebUIDarkMode,UseOzonePlatform --force-dark-mode --ozone-platform=wayland
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
     # Despite the name, also works for non-floating windows.
